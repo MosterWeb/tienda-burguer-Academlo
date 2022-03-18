@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="" as="style">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Burguer-Shop</title>
+</head>
+<body>
+
+     <!-- Menu -->
+    
+    
+    <main >
+        <!-- Menú de navegación -->
+        <section class="nav">
+            <div class="logo">
+                <img src="assets/img/logo2.png">
+            </div>
+            <nav class="none">
+                <a href="#" class="btn-menu">Home</a>
+                <a href="#" class="btn-menu">About</a> 
+                <a href="#" class="btn-menu">Blog</a> 
+                <a href="#" class="btn-menu">Contact</a>    
+            </nav> 
+            <div >
+                <p  class="nav-iconbascket fixed-2">
+                    <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-basket" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="7 10 12 4 17 10" />
+                        <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                        <circle cx="12" cy="15" r="2" />
+                      </svg><a id="count1"></a>
+                </p>
+            </div> 
+            
+            <div >
+                <img  class="nav-deliverycart"src="assets/img/header/1.png" width="50">                                       
+               
+                <div class="nav-delivery">
+                    <p class="nav-delivery__title none">Delivery order</p>
+                    <p class="nav-delivery__phone none">123-456-7890</p>
+                </div>
+                
+            </div> 
+            <div class="none fixed">
+                <a id="total" class="btn">Pedidos</a>
+            </div> 
+       </section>
+
+      
+       
+
+        <!-- header -->
+        <section class="header ">
+            <div class="header-titles">
+                <p class="header-titles__subtitle">Los mejores de la ciudad</p>
+                <h2 class="header-titles_title">Disfruta de tu <span>hamburguesa de pollo</span> especial</h2>
+                <p class="header-titles_descripcion">Queso cheddar + Papas fritas</p>
+                <p class="header-titles_descripcion">+Ensalada + Cremas</p>
+
+                <div class="header-titles__action">
+                    <a href="#" class="btn"> ¡Ordena YA!</a>
+                    <p class="header-titles__precio"><span>Precio:</span> S/. 10.90</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/img/header/burger-promo.png">               
+            </div>
+            
+        </section>
+
+        <!-- Categorias  -->
+        <section class="categorias ">
+            <div class="flex-l p-l">
+                <div class="categorias-title">
+                    <h2>Buzzed Burguer</h2>
+                    <p>Con el 50% off esta semana</p>
+                </div>
+                
+                <a href="#" class="btn-order" > ¡Pídela YA! </a>
+            </div>
+
+            <div class="flex-l p-l">
+                <div class="categorias-title">
+                    <h2>Super deliciosa</h2>
+                    <p>Clássica</p>
+                </div> 
+                <a href="#" class="btn-menu white" > ¡Pídela YA! </a>              
+            </div>
+
+            <div class="flex-l p-l">
+                <div class="categorias-title">
+                    <h2>Jamón y queso</h2>
+                    <p>Royal</p>
+                </div> 
+                <a href="#" class="btn-menu white" > ¡Tu pedido! </a>               
+            </div>
+
+            <div class="flex-l p-l">
+                <div class="categorias-title">
+                    <h2>Salchipapas</h2>
+                    <p>Clásica</p>
+                    <p>y especial</p>
+                </div> 
+                <a href="#" class="btn-menu white" > ¡Tu pedido! </a>               
+            </div>
+
+            <div class="flex-l p-l">
+                <div class="categorias-title">
+                    <h2>Delicias</h2>
+                    <p>Postres</p>
+                </div> 
+                <a href="#" class="btn-menu white" > ¡Tu pedido! </a>               
+            </div>
+
+            <div class="flex-l p-l">
+                <div class="categorias-title">
+                    <h2>Alitas BBQ</h2>
+                    <p>350 gr de alitas </p>
+                    <p>+ Porción de papas fritas</p>
+                </div>
+                
+                <a href="#" class="btn-order" > ¡Pídela YA! </a>
+            </div>
+            
+
+        </section>
+
+
+        <!-- Productos -->
+        <section id="wrapper" class="productos p-t ">
+            <div class="productos-titles">
+                <p class="left heading-subtitle"> Nuestro menú</p>
+                <h2 class="left heading-title"> Deliciosas </h2>
+                <h2 class="left heading-title"> <span>Hamburguesas</span> </h2>
+                <a class="btn-comprar " id="comprar">Comprar</a>
+            </div>
+
+            <div id="cart">
+                
+               
+            </div>
+            
+
+            <div id="products" >
+
+            
+            </div>
+
+        </section>
+
+
+        <!-- Hero 1 -->
+        <section class="hero-1 p-t ">
+            <div >
+                <h2 class="heading-subtitle"> ¿Por que encontramos?</h2>
+                <h2 class="heading-title"> Ingredientes de la </h2>
+                <h2 class="heading-title"><span> mejor calidad</span> </h2>  
+            </div>
+
+            <section class="hero-1-grid">
+                <!-- Lado izquierdo de ingredientes -->
+                <div class="hero-1-flex none">
+                    <div class="productos-tienda__heading p-l line-h">
+                        <h2  class="productos-tienda__title">Pan brioche</h2>
+                        <p class="productos-tienda__descripcion">El mejor pan, suave y esponjoso</p>
+                        <p class="productos-tienda__title">Precio: S/. 2</p>
+                        <img src="assets/img/hero/bshape2.png" alt="">
+                    </div>
+
+                    <div class="productos-tienda__heading p-l line-h">
+                        <h2  class="productos-tienda__title">Ensalada</h2>
+                        <p class="productos-tienda__descripcion">Fresca ensalada  de lechuga, tomate y cebolla</p>
+                        <p class="productos-tienda__title">Precio: S/. 1</p>
+                        <img src="assets/img/hero/bshape1.png" alt="">
+                    </div>
+                </div>
+
+                <!-- IMagen central hamburguesa -->
+                <div class="p-t">
+                    <img src="assets/img/hero/dblburger.png" alt="">
+                </div>
+
+                <!-- Lado derecho de ingredientes -->
+                <div class="hero-1-flex txt-right none">
+                    <div class="productos-tienda__heading p-l line-h">
+                        <h2  class="productos-tienda__title txt-right">Carne y tocineta</h2>
+                        <p class="productos-tienda__descripcion txt-right">Los ingredientes reyes: carne hecha en casa y tocineta ahumada</p>
+                        <p class="productos-tienda__title txt-right">Precio: S/. 5</p>
+                         <img src="assets/img/hero/bshape1-right.png" alt="">
+                       
+                    </div>
+
+                    <div class="productos-tienda__heading p-l line-h">
+                        <h2  class="productos-tienda__title txt-right">Queso</h2>
+                        <p class="productos-tienda__descripcion txt-right">Queso cheddar para el paladar exigente</p>
+                        <p class="productos-tienda__title txt-right">Precio: S/. 5</p>
+                         <img src="assets/img/hero/bshape2-right.png" alt="">
+                    </div>
+                </div>
+
+            </section>
+            
+
+        </section>
+
+
+        <!-- Hero 2 -->
+        <section class="p-t" >
+            <div class="productos-titles">
+                <h2 class="heading-subtitle"> ¡Para chuparse los dedos!</h2>
+                <h2 class="heading-title"> Big Burguer </h2>
+                <h2 class="heading-title"><span>S/. 20.90</span> </h2>
+                <div class="width-50"><a href="" class="btn flex-center">¡Pídelo ya!</a>  </div>
+            </div>
+
+
+            <section class="hero-2 p-t">
+                <div class="hero-titles">
+                    <p class="header-titles__subtitle">Delivery</p>
+                    <h2 class="header-titles_title">En tu hogar</h2>
+                    <h2 class="header-titles_title"><span> U oficina</span></h2>
+                    <p class="header-titles_descripcion">Estamos ubicados en Lima -Chorrillos</p>
+                    <p class="header-titles_descripcion">Horario de 12:pm a 12am</p>
+    
+                    <div class="hero-titles__action">
+                          <!-- Carrito del delivery -->
+
+                          <img  class="nav-deliverycart"src="assets/img/header/1.png" width="50">                      
+                           
+                          <div class="nav-delivery">
+                              <p class="nav-delivery__title">Delivery order</p>
+                              <p class="nav-delivery__phone">123-456-7890</p>
+                          </div>
+
+                          <!-- Ordena ya -->
+
+                        <a href="#" class="btn"> ¡Ordena YA!</a>                    
+                            
+                        
+                    </div>
+                </div>
+
+
+                    <div>
+                        <img class="hero-2__img" src="assets/img/hero/bike.png" alt="">
+
+                    </div>
+            </section>
+
+        </section>
+
+
+        <!-- El chef -->
+        <section class=" p-t p-b ">
+
+           <div class="chef p-t ">
+                 <div class="chef--image">
+                <img   src="assets/img/chef/chef.jpg" width="90%" alt="">
+                    <h2 class="left heading-title__chef"> Leon Alvarado </h2>
+                    <h2 class="left heading-subtitle__chef"> <span>Cheff de la casa</span> </h2>
+                <div class="chef--image__footer " >
+                    <img  src="assets/img/chef/3.png"  alt="">
+                    <p class="heading-title__chef size-2 white">2000+</p>
+                    <p class="heading-subtitle__chef white">Hamburguesas</p>
+                </div>
+            </div>
+
+            <div>
+                <!-- Headings -->
+                <div class="productos-titles">
+                    <p class="left heading-subtitle"> Nuestro chef</p>
+                    <h2 class="left heading-title"> Servimos </h2>
+                    <h2 class="left heading-title"> <span>Con pasión</span> </h2>
+                </div>
+
+                <section class="chef-passion ">
+                    <!-- Producto 1 chef                 -->
+                <section class="productos-chef--tienda p-t-1">
+                    <div>
+                        <p class="productos-tienda__hot">Hot</p>
+                        <img src="assets/img/productos/pd1.png" width="80" alt="">
+                    </div>
+
+                    <div class="productos-chef--tienda__heading p-l line-h">
+                        <h2  class="productos-tienda__title">Especial doble</h2>
+                        <p class="productos-tienda__descripcion">Doble carne y doble queso cheddar</p>
+                        <p class="productos-tienda__title">Precio: S/. 10.90</p>
+                    </div>
+                    
+                </section>
+
+                        <!-- Producto 2 chef                 -->
+                <section class="productos-chef--tienda p-t-1">
+                    <div>
+                        <p class="productos-tienda__hot">Hot</p>
+                        <img src="assets/img/productos/pd1.png" width="80" alt="">
+                    </div>
+
+                    <div class="productos-chef--tienda__heading p-l line-h">
+                        <h2  class="productos-tienda__title">La TociBurguer</h2>
+                        <p class="productos-tienda__descripcion">Tocineta con jamón y queso</p>
+                        <p class="productos-tienda__title">Precio: S/. 10.90</p>
+                    </div>
+                    
+                </section>
+                </section>
+
+            </div>
+
+            </div>          
+                
+            
+        </section>
+
+        <!-- Newslater -->
+        <section >
+            <div class="newslater flex-newslater">
+            <div class="newslater-title"><h2> Nuestro Boletín <span> Semanal</span></h2></div>
+            <form action="#">
+                <input type="text" name="email" id="" placeholder="Ingresa tu email">
+                <input class="btn" type="submit" name="">
+            </form>
+            </div>
+        </section> 
+        <hr class="none">
+        
+          <!-- Footers  -->
+
+     <section class="footer p-b">
+        <div class="footer-1 p-t">
+            <!-- Direccion 1 -->
+            <div class="footer-1-heading">
+                <h2 class="footer-1-heading__title"> Chorrillos</h2>
+                <p class="footer-1-heading__adress">570 8th Ave,New York, NY 10018 United States</p>
+                <a class="footer-1-heading__map" href="">View Google Map</a>
+                <p class="footer-1-heading__phone">12-345-678</p>
+                <p class="footer-1-heading__horario">11.00 AM – 11.00 PM</p>
+            </div>
+
+                <!-- Direccion 2 -->
+            <div class="footer-1-heading">
+                <h2 class="footer-1-heading__title"> Villa El Salvador</h2>
+                <p class="footer-1-heading__adress">570 8th Ave,New York, NY 10018 United States</p>
+                <a class="footer-1-heading__map" href="">View Google Map</a>
+                <p class="footer-1-heading__phone">12-345-678</p>
+                <p class="footer-1-heading__horario">11.00 AM – 11.00 PM</p>
+            </div>
+
+               <!-- Direccion 3 -->
+               <div class="footer-1-heading">
+                <h2 class="footer-1-heading__title"> Miraflores  </h2>
+                <p class="footer-1-heading__adress">570 8th Ave,New York, NY 10018 United States</p>
+                <a class="footer-1-heading__map" href="">View Google Map</a>
+                <p class="footer-1-heading__phone">12-345-678</p>
+                <p class="footer-1-heading__horario">11.00 AM – 11.00 PM</p>
+            </div>
+
+               <!-- Direccion 4 -->
+               <div class="footer-1-heading">
+                <h2 class="footer-1-heading__title"> Los Olivos </h2>
+                <p class="footer-1-heading__adress">570 8th Ave,New York, NY 10018 United States</p>
+                <a class="footer-1-heading__map" href="">View Google Map</a>
+                <p class="footer-1-heading__phone">12-345-678</p>
+                <p class="footer-1-heading__horario">11.00 AM – 11.00 PM</p>
+            </div>
+            
+
+        </div>
+    
+         <!-- Footers / 2 -->
+        <div class="footer-2 p-t p-b">
+            <div class="footer-2 p-t  p-b flex-center">
+                <img src="assets/img/logo2.png" alt="">
+                <nav class="footer-nav">
+                    <a href="#" class="btn-menu">Home</a>
+                    <a href="#" class="btn-menu">About</a> 
+                    <a href="#" class="btn-menu">Blog</a> 
+                    <a href="#" class="btn-menu">Contact</a>    
+                </nav>
+                <p class="footer-1-heading__adress" >Copyright © 2022 Tienda Proyecto Academlo por: Jason Rodríguez</p>
+            </div>
+    
+        </div>
+
+        <div class="footer-menu none-2">
+            <div class="flex-footer_menu">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zoom-money" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="10" cy="10" r="7" />
+                        <path d="M21 21l-6 -6" />
+                        <path d="M12 7h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+                        <path d="M10 13v1m0 -8v1" />
+                      </svg>Total <span id="total1" class="pay"> </span></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-shopping-cart" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="19" r="2" />
+                        <circle cx="17" cy="19" r="2" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                      </svg>Cart <span id="count"  class="count"> </span></a> 
+                    <a id="comprarMobile" ><svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-device-mobile" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="7" y="4" width="10" height="16" rx="1" />
+                        <line x1="11" y1="5" x2="13" y2="5" />
+                        <line x1="12" y1="17" x2="12" y2="17.01" />
+                      </svg>Phone</a> 
+                    
+
+            </div>
+                    
+        </div>
+     </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+     
+</body>
+</html>
